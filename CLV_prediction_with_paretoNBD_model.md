@@ -65,12 +65,12 @@ where A0 is mentioned previously.
 ### d. Derivation of conditional expectation
 The expected number of purchases in the period (T, T +t] for a customer with purchase history (xi, ti, Ti), which we call conditional expectation, E(Y(t)|xi,ti,Ti). <br>
 ![fig12](https://github.com/CasiaFan/customer_lifetime_value_prediction/blob/master/pic/12.png) <br>
-where where L is the likelihood of equation with estimated parameters, and Γ(.) denotes the standard Gamma function.
+where L is the likelihood of equation with estimated parameters, and Γ(.) denotes the standard Gamma function.
 
-### input data
+### Input data
 - a. from csv file with customers' information required above: frequency xi, duration Ti, recency ti
 - b. from mysql database with the same information above
 **Tips: in order to test prediction precision, we could choose first k days as historical purchase data while the rest are furture T-k days for testing**
 
-### scritps
+### Scritps
 The program is writen in python mainly with scipy package, eg: scipy.special, scipy.optimize, scipy.misc. The key function is differential_evolution which is mentioned in part b.
