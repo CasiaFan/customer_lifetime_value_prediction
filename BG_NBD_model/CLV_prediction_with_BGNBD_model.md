@@ -35,7 +35,7 @@ parameter r and scale parameter α: (with E[λi|r,α] = r/α)
 ![fig4](https://github.com/CasiaFan/customer_lifetime_value_prediction/blob/master/BG_NBD_model/pic/6.png) <br>
 5. Heterogeneity in p follows a beta distribution with pdf
 ![fig5](https://github.com/CasiaFan/customer_lifetime_value_prediction/blob/master/BG_NBD_model/pic/8.png) <br>
-B(a, b) is the beta function, which can be expressed in terms of gamma functions: B(a,b)=gamma(a)*gamma(b)/gamma(a+b).
+B(a,b) is the beta function, which can be expressed in terms of gamma functions: B(a,b)=gamma(a)*gamma(b)/gamma(a+b).
 6. the purchasing rates λi and the dropout possibility p are considered as distributed independently of each other.
 The parameters r, α, a and b are unknown and need to be estimated.
 
