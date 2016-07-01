@@ -24,14 +24,12 @@ Three past purchasing behavior measures are required for every customer i.  <br>
 ## 2. Details of BG/NBD model -- methodology
 ### a. Model assumption
 1. If no interference, customers go through two stages in their “lifetime” with a specific firm: they are “alive” for some period of time, then become permanently inactive.
-2. While alive, the number of transactions made by a customer follows a Poisson process with transaction rate λi; If the customer i is still active at Ti (so τi > Ti), the number of
-purchases xi in (0; Ti] has the Poisson distribution
+2. While alive, the number of transactions made by a customer follows a Poisson process with transaction rate λi; If the customer i is still active at Ti (so τi > Ti), the number of purchases xi in (0; Ti] has the Poisson distribution
 ![fig2](https://github.com/CasiaFan/customer_lifetime_value_prediction/blob/master/BG_NBD_model/pic/5.png) <br>
 3. After any transaction, a customer becomes inactive with probability p. The point at which the customer “drops out” is distributed across transactions according to a (shifted) geometric distribution with pmf
 ![fig3](https://github.com/CasiaFan/customer_lifetime_value_prediction/blob/master/BG_NBD_model/pic/7.png) <br>
 Since the parameters λi and p can be different among customers, the BG/NBD model makes 2 assumptions on the heterogeneity across customers.
-4. Heterogeneity in transaction rates λi across customers follows a gamma distribution with shape
-parameter r and scale parameter α: (with E[λi|r,α] = r/α)
+4. Heterogeneity in transaction rates λi across customers follows a gamma distribution with shape parameter r and scale parameter α: (with E[λi|r,α] = r/α)
 ![fig4](https://github.com/CasiaFan/customer_lifetime_value_prediction/blob/master/BG_NBD_model/pic/6.png) <br>
 5. Heterogeneity in p follows a beta distribution with pdf
 ![fig5](https://github.com/CasiaFan/customer_lifetime_value_prediction/blob/master/BG_NBD_model/pic/8.png) <br>
